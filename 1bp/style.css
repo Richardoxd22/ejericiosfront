@@ -1,0 +1,60 @@
+body{    
+background-color: rgb(215, 214, 214);
+margin: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid;
+}
+.header__heading{
+    text-align: center;
+}
+.content-container{
+    width: 800px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    margin-top:120 px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content-container{
+    /* width: 420px;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-content: center;
+}
+.input{
+    background-color: turquoise;
+    padding: 10px;
+    border: 1px solid turquoise;
+    border-radius: 6px;
+}
+.button{
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+
+}
+/* esto es como uin condicional if para q sea responsive el cada dispositivo */
+@media screen {
+    .content-container{
+        width: 100%;
+    }
+    .button{
+        background-color: purple;
+    }
+}
