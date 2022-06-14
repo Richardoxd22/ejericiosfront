@@ -1,0 +1,21 @@
+.container-custom{
+    max-width:  1050px;
+    margin-top: 25px;
+    background-color: #a8b1b9;
+}
+.column-1{
+    background-color: black;
+}
+.column-2{
+    background-color: black;    
+}
+.card-elementos{
+    padding-left: 150px;
+}
+img-margen{
+    padding-left: 50px;
+}
+.campotexto{
+    padding-left: 50px;
+    width: 400px;
+}

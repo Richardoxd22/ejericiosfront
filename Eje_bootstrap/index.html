@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <div class="container-fluid container-custom">
+        <div class="row ">
+            <div class="col ">
+                <label class="title">Listado de personajes</label>
+            </div>
+            <div class="col text-end px-0">
+                <button class="btn btn-danger">Cerrar sesión</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col ">
+                <input class="form-control" placeholder="Buscar" />
+            </div>
+            <div class="col text-end">
+                <button class="btn btn-success" id="btn_nuevo">Nuevo</button>
+            </div>
+        </div>
+
+        
+        <!-- para la parte del formulario -->
+        <div class="row mt-3">
+            <h5 class="text center"><label for="personaje">Personaje Nuevo Ingreso</label></h5>
+        </div>
+        <form id="ingpersonaje" class="campotexto mt-5">
+
+            <div class="row  align-items-center">
+                <div class="col-auto ">
+                    <label for="nombre" class="col-form-label">Nombre</label>
+                </div>
+                <div class="col ms-4">
+                    <input type="text" id="nombre" class="form-control inpt" placeholder="Heroe">
+                </div>
+            </div>
+
+            <div class="row  align-items-center">
+                <div class="col-auto ">
+                    <label for="descripcion" class="col-form-label">Descripcion</label>
+                </div>
+                <div class="col ">
+                    <input type="text" id="descripcion" class="form-control inpt" placeholder="Descripcion">
+                </div>
+                
+            </div>
+            <div class="col-12 text-center mt-5">
+                <button class="btn btn-success btn-guardar" id="btn_guardar" onclick="guardar">Guardar</button>
+                <button class="btn btn-danger btn-cancelar ms-3" id="btn_cancelar">Cancelar</button>
+            </div>        
+        </form>
+    
+
+    <!-- despliegue de los datos -->
+    <div class="row mt-4 content-list" id="peliculas" >
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
